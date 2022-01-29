@@ -14,7 +14,7 @@ ReactDOM.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}>
-      <Route path='user/:id' element={<User />} />
+      <Route path="user/:id" element={<User />} />
         {/* <Route path="teams" element={<Teams />}>
           <Route path=":teamId" element={<Team />} />
           <Route path="new" element={<NewTeamForm />} />

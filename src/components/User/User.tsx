@@ -1,6 +1,7 @@
 import {IUserFull} from '../../types/data';
 import React from "react";
-import {Button} from '../Button/Button'
+import {Button} from '../Button/Button';
+import { useParams } from 'react-router-dom';
 
 interface IUser extends IUserFull { };
 
@@ -10,6 +11,8 @@ const User: React.FC<IUser> = ({
         address,
         company
     }) => {
+
+    const { idNumber } = useParams();
 
     return (
         <li>
