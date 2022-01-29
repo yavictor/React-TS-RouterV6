@@ -21,6 +21,8 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
+    "src",
+    "src/types/custom.d.ts",
+    "src/types/typings.d.ts"
   ]
 }
