@@ -1,10 +1,12 @@
 import styles from './Button.module.scss';
+import React, {ButtonHTMLAttributes} from "react";
 
-interface ButtonProps {
-    text: string;
+interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+    text: string,
+    // action: () => void
 }
 
-const Button = ({text = ''}: ButtonProps) => {
+const Button : React.FC<IButtonProps> = ({text = ''}) => {
     return (
         <button className={styles.royalBlue}>{text}</button>
     )
